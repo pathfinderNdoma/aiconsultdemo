@@ -7,5 +7,6 @@ pydantic-extra-types==2.7.0
 pydantic-settings==2.2.1
 pydantic_core
 scikit-learn
+sklearn ==1.2.2
 typing_extensions
 uvicorn
