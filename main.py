@@ -11,8 +11,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve(strict = True).parent
 
 with open(f"{BASE_DIR}/aimodel.pkl", "rb") as f:
-    loaded_model = pickle.load(f)
-  
+    #loaded_model = pickle.load(f)
+    u = pickle._Unpickler(f)
+    u.encoding = 'latin1'
+    loaded_model = u.load()
 
 
  #Initialize an instance of FastAPI app   
