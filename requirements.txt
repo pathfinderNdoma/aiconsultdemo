@@ -1,12 +1,7 @@
 fastapi[all]
 anaconda-client==1.1.1
-anaconda-navigator==2.3.1
-appdirs==1.4.4
-atomicwrites==1.4.0
-backports.weakref==1.0.post1
-bkcharts==0.2
-clyent==1.2.2
-comtypes==1.1.10
+anaconda-navigator=
+
 conda==22.9.0
 conda-build==3.22.0
 dnspython==2.6.1
