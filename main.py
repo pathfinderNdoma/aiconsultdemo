@@ -172,7 +172,7 @@ def prepare_input(existing_symptoms, columns):
 
 
 #Define a route to predict disease
-@app.post("/")
+@app.get("/")
 async def root():
     return "Online Doctor API"
 
@@ -197,8 +197,3 @@ async def predict_disease(request: Request):
     #return  formatted_output_str
     predicted_disease = loaded_model.predict(output_array)
     return {"There is a possibility you are most likely having"+ " " + predicted_disease[0]}
-
-
-@app.get("/home/{message}")
-async def home(message):
-    return {"message": message}
